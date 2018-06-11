@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <style>
+        body {
+            background: linear-gradient(-45deg, #F24645, #EBC08D);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+            align-items: center;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+        }
+
+        .image-wrapper {
+            background: #fff url("img/datacenters.png") no-repeat;
+            border-radius: 20px;
+            border: 10px solid #fff;
+            box-shadow: 10px 10px 7px -4px rgba(0,0,0,0.09);
+            height: 654px;
+            position: relative;
+            width: 654px;
+        }
+
+        .header {
+            background: #fff url("img/exoscale-logo.png") no-repeat;
+            background-position: 20px 10px;
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 50px 20px 15px;
+        }
+
+        .zone {
+            background-color: #000;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-size: .8em;
+            font-weight: 800;
+            padding: 5px 8px;
+            position: absolute;
+            text-transform: uppercase;
+        }
+
+        .zone--ch-dk-2 {
+            left: 277px;
+            top: 401px;
+        }
+
+        .zone--at-vie-1 {
+            left: 515px;
+            top: 348px;
+        }
+
+        .zone--ch-gva-2 {
+            left: 104px;
+            top: 433px;
+        }
+
+        .zone--de-fra-1 {
+            left: 290px;
+            top: 262px;
+        }
+
+        .zone__detail {
+            background-color: #fff;
+            bottom: 0;
+            padding: 20px;
+            position: absolute;
+        }
+
+        .zone__detail__picture {
+            border-radius: 50%;
+            border: 1px solid #dedede;
+            float: left;
+            height: 120px;
+            overflow: hidden;
+            position: relative;
+            width: 120px;
+        }
+
+        .zone__detail__body {
+            float: right;
+            width: 75%;
+        }
+
+        .zone__detail img {
+            bottom: -9999px;
+            left: -9999px;
+            margin: auto;
+            position: absolute;
+            right: -9999px;
+            top: -9999px;
+        }
+
+        .zone__detail__title {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .zone__detail__description {
+            margin-top: 7px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="js/compiled/app.js"></script>
+    <script>pingtimes.core.init();</script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+/.nrepl-port
+target/
+resources/public/js/compiled/*
+/figwheel_server.log

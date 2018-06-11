@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(-45deg, #F24645, #EBC08D);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#main {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.image-wrapper {
+    box-shadow: 10px 10px 7px -4px rgba(0,0,0,0.09);
+    border-radius: 20px;
+    border: 10px solid #fff;
+    background-color: #fff;
+    height: 654px;
+    width: 654px;
+    background-image: url("img/datacenters.png");
+    position: relative;
+}
+
+.header {
+    background: #fff url("img/exoscale-logo.png") no-repeat;
+    background-position: 20px 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 50px 20px 15px;
+}
+
+.zone {
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: .8em;
+    font-weight: 800;
+    border: solid 1px #dedede;
+}
+
+.zone--ch-dk-2 {
+    top: 401px;
+    left: 277px;
+}
+
+.zone--at-vie-1 {
+    top: 348px;
+    left: 515px;
+}
+
+.zone--ch-gva-2 {
+    top: 433px;
+    left: 100px;
+}
+
+.zone--de-fra-1 {
+    top: 262px;
+    left: 290px;
+}
