@@ -8,7 +8,7 @@
    :endpoints  {:ch-dk-2  "https://ping-times.sos-ch-dk-2.exo.io/index.html"
                 :de-fra-1 "https://ping-times-fra.sos-de-fra-1.exo.io/index.html"
                 :ch-gva-2 "https://ping-times.sos-ch-dk-2.exo.io/index.html" ;; FIXME once hosts are up
-                :at-vie-1 "https://ping-times.sos-ch-dk-2.exo.io/index.html"} ;; FIXME once hosts are up
+                :at-vie-1 "https://ping-times-vie.sos-at-vie-1.exo.io/index.html"}
    :detail-zone nil
    :details    {:ch-dk-2 {:title "Zurich Datacenter"
                           :content "Buried underground the Alps in a former military anti-atomic command and control center, CH-DK-2 is hosted by the Deltalis data center facility."
