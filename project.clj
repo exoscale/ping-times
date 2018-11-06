@@ -5,7 +5,8 @@
                  [re-frame "0.10.5"]
                  [day8.re-frame/http-fx "0.1.6"]]
 
-  :plugins [[lein-cljsbuild "1.1.7"]]
+  :plugins [[lein-cljsbuild "1.1.7"]
+            [lein-figwheel "0.5.16"]]
 
   :min-lein-version "2.5.3"
 
@@ -26,11 +27,11 @@
    {:dependencies [[binaryage/devtools "0.9.10"]
                    [day8.re-frame/re-frame-10x "0.3.3"]
                    [day8.re-frame/tracing "0.5.1"]
-                   [figwheel-sidecar            "0.5.15"]
-                   [com.cemerick/piggieback     "0.2.2"]
-                   ]
+                   [figwheel-sidecar            "0.5.16"]
+                   [cider/piggieback "0.3.9"]]
 
-    :plugins      [[lein-figwheel "0.5.16"]]}
+    :plugins      [[lein-figwheel "0.5.16"]]
+    :repl-options {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}}
    :prod { :dependencies [[day8.re-frame/tracing-stubs "0.5.1"]]}}
 
   :cljsbuild
