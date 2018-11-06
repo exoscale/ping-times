@@ -1,9 +1,9 @@
 (defproject pingtimes "0.1.0-SNAPSHOT"
-  :dependencies [[org.clojure/clojure "1.8.0"]
+  :dependencies [[day8.re-frame/http-fx "0.1.6"]
+                 [org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.10.238"]
-                 [reagent "0.7.0"]
                  [re-frame "0.10.5"]
-                 [day8.re-frame/http-fx "0.1.6"]]
+                 [reagent "0.7.0"]]
 
   :plugins [[lein-cljsbuild "1.1.7"]
             [lein-figwheel "0.5.16"]]
@@ -25,14 +25,14 @@
   :profiles
   {:dev
    {:dependencies [[binaryage/devtools "0.9.10"]
+                   [cider/piggieback "0.3.9"]
                    [day8.re-frame/re-frame-10x "0.3.3"]
                    [day8.re-frame/tracing "0.5.1"]
-                   [figwheel-sidecar            "0.5.16"]
-                   [cider/piggieback "0.3.9"]]
+                   [figwheel-sidecar            "0.5.16"]]
 
     :plugins      [[lein-figwheel "0.5.16"]]
     :repl-options {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}}
-   :prod { :dependencies [[day8.re-frame/tracing-stubs "0.5.1"]]}}
+   :prod {:dependencies [[day8.re-frame/tracing-stubs "0.5.1"]]}}
 
   :cljsbuild
   {:builds
@@ -48,8 +48,7 @@
                                            day8.re-frame-10x.preload]
                     :closure-defines      {"re_frame.trace.trace_enabled_QMARK_" true
                                            "day8.re_frame.tracing.trace_enabled_QMARK_" true}
-                    :external-config      {:devtools/config {:features-to-install :all}}
-                    }}
+                    :external-config      {:devtools/config {:features-to-install :all}}}}
 
     {:id           "min"
      :source-paths ["src/cljs"]
@@ -57,9 +56,6 @@
                     :output-to       "resources/public/js/compiled/app.js"
                     :optimizations   :advanced
                     :closure-defines {goog.DEBUG false}
-                    :pretty-print    false}}
+                    :pretty-print
 
-
-    ]}
-
-  )
+                    false}}]})
